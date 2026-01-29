@@ -3,6 +3,12 @@
 
 # Streamlining Vulnerability Remediation with Agentic AI
 
+
+## 🎥 Watch Video Demo ⬇️
+
+<img width="1436" height="867" alt="image" src="https://github.com/user-attachments/assets/1e1b9703-d018-4dee-b132-641440a8afa3" />
+
+
 ## High-Level Overview 
 
 This project demonstrates how an **agent-assisted workflow** can dramatically reduce the amount of time GRC and vulnerability management teams spend on **manual triage, coordination, and administrative work**, allowing them to focus on higher-value risk decisions.
