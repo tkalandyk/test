@@ -5,7 +5,6 @@
 
 
 ## 🎥 Watch Video Demo ⬇️
-[https://youtu.be/DDVBLjLtxP8](https://youtu.be/DDVBLjLtxP8?si=BrntVyZxe1lnC7Ti)
 
 ## Video Walkthrough
 
