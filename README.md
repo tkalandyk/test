@@ -7,14 +7,17 @@
 ## 🎥 Watch Video Demo ⬇️
 [https://youtu.be/DDVBLjLtxP8](https://youtu.be/DDVBLjLtxP8?si=BrntVyZxe1lnC7Ti)
 
+## Video Walkthrough
+
 <a href="https://youtu.be/DDVBLjLtxP8" target="_blank" rel="noopener noreferrer">
   <img
-    width="1436"
-    height="867"
-    alt="Video Walkthrough"
+    alt="Click to watch the project walkthrough"
     src="https://github.com/user-attachments/assets/1e1b9703-d018-4dee-b132-641440a8afa3"
   />
 </a>
+
+_Click the image to watch the walkthrough in a new tab._
+
 
 
 ## High-Level Overview 
