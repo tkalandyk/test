@@ -4,9 +4,7 @@
 # Streamlining Vulnerability Remediation with Agentic AI
 
 
-## 🎥 Watch Video Demo ⬇️
-
-## Video Walkthrough
+## 🎥 Video Walkthrough ⬇️
 
 <a href="https://youtu.be/DDVBLjLtxP8" target="_blank" rel="noopener noreferrer">
   <img
