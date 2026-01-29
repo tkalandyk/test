@@ -1,6 +1,6 @@
 # Agent-Assisted Vulnerability Intake for GRC & Risk Teams
 
-## High-Level Overview (For Recruiters & Hiring Managers)
+## High-Level Overview 
 
 This project demonstrates how an **agent-assisted workflow** can dramatically reduce the amount of time GRC and vulnerability management teams spend on **manual triage, coordination, and administrative work**, allowing them to focus on higher-value risk decisions.
 
@@ -85,16 +85,6 @@ It reflects **how mature organizations think about efficiency**, not just toolin
 
 Implementation details are intentionally abstracted to keep the focus on **workflow and impact**.
 
----
-
-## Walkthrough Video
-
-A walkthrough video accompanies this project and explains:
-
-- Where GRC time is traditionally spent
-- How the agent absorbs repetitive work
-- How human approval fits into the loop
-- Why this approach scales better than manual processes
 
 ---
 
