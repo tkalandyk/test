@@ -7,7 +7,7 @@
 ## 🎥 Watch Video Demo ⬇️
 [https://youtu.be/DDVBLjLtxP8](https://youtu.be/DDVBLjLtxP8?si=BrntVyZxe1lnC7Ti)
 
-<a href="https://youtu.be/DDVBLjLtxP8" target="_blank">
+<a href="https://youtu.be/DDVBLjLtxP8" target="_blank" rel="noopener noreferrer">
   <img
     width="1436"
     height="867"
