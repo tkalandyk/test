@@ -5,9 +5,16 @@
 
 
 ## 🎥 Watch Video Demo ⬇️
-https://youtu.be/DDVBLjLtxP8
+[https://youtu.be/DDVBLjLtxP8](https://youtu.be/DDVBLjLtxP8?si=BrntVyZxe1lnC7Ti)
 
-<img width="1436" height="867" alt="image" src="https://github.com/user-attachments/assets/1e1b9703-d018-4dee-b132-641440a8afa3" />
+<a href="https://youtu.be/DDVBLjLtxP8" target="_blank">
+  <img
+    width="1436"
+    height="867"
+    alt="Video Walkthrough"
+    src="https://github.com/user-attachments/assets/1e1b9703-d018-4dee-b132-641440a8afa3"
+  />
+</a>
 
 
 ## High-Level Overview 
