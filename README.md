@@ -5,6 +5,7 @@
 
 
 ## 🎥 Watch Video Demo ⬇️
+https://youtu.be/DDVBLjLtxP8
 
 <img width="1436" height="867" alt="image" src="https://github.com/user-attachments/assets/1e1b9703-d018-4dee-b132-641440a8afa3" />
 
