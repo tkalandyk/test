@@ -80,7 +80,7 @@ This project demonstrates an understanding of:
 - GRC operational pain points
 - Vulnerability management at scale
 - Risk-based prioritization
-- Human-in-the-loop automation
+- Human in the loop automation
 - Agent-assisted workflows
 - Enterprise ticketing and ownership models
 
@@ -88,7 +88,7 @@ It reflects **how mature organizations think about efficiency**, not just toolin
 
 ---
 
-## What This Project Is — And Is Not
+## What This Project Is And Is Not
 
 **This is:**
 - A portfolio demonstration of agent-assisted GRC workflows
@@ -131,7 +131,7 @@ At a high level, the agent handles:
 
 - Ingesting vulnerability scan output
 - Standardizing and organizing the data
-- Enriching findings with known asset and business context
+- Enriching findings with known assets and business context
 - Applying consistent risk scoring logic
 - Preparing findings for review
 - Routing only validated items forward
@@ -158,5 +158,5 @@ This ensures:
 
 ---
 
-## High-Level Workflow
+## High Level Workflow
 
