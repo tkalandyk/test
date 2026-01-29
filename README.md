@@ -1,7 +1,7 @@
 
 <img width="1536" height="1024" alt="ChatGPT Image Jan 28, 2026, 07_35_02 PM" src="https://github.com/user-attachments/assets/ea73baee-d737-40b7-9c5f-9dd549e219b4" />
 
-# Streamlining Vulnerability Remediation with Gentic AI
+# Streamlining Vulnerability Remediation with Agentic AI
 
 ## High-Level Overview 
 
