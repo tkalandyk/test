@@ -1,4 +1,4 @@
-# Agent-Assisted Vulnerability Intake for GRC & Risk Teams
+# GRC Vulnerability Intake Pipeline
 
 ## High-Level Overview 
 
