@@ -34,7 +34,10 @@ No fake data, mocked APIs, or placeholder logic are used to represent system beh
 ---
 ## 🎥 Click to Watch the Demo Video ⬇️
 
-[![Tenable Scan Agent Demo](https://github.com/user-attachments/assets/b9bfee9)]()
+<a href="https://youtu.be/C7uUVBkl3-s" target="_blank">
+  <img width="1427" height="837" alt="Tenable Scan Agent Demo" src="https://github.com/user-attachments/assets/b9bfee95-2334-4be1-9959-589feeaec354">
+</a>
+
 
 
 ## Who This Is For
