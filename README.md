@@ -2,11 +2,32 @@
 
 ## Overview
 
-This project is a **Vulnerability Management Orchestration Tool** that transforms a traditionally Command Line Interface driven workflow into a **safe, guided, and auditable analyst experience**.
+This project is a **Vulnerability Management Orchestration Tool (Prototype)** designed to demonstrate how real-world security automation can be safely wrapped in an analyst-friendly control layer.
 
-It wraps an existing Python backend (Tenable.io scanning + Jira ticketing automation) inside a **PySide6 (Qt) desktop application**, enabling security teams to run scans, monitor progress, and generate remediation tickets **without touching scripts or command-line arguments**.
+It transforms a traditionally **CLI-driven vulnerability scanning workflow** into a **guided, auditable desktop experience**, while preserving the underlying automation logic used in production environments.
 
-The core design principle is **Human-in-the-Loop automation**: automation accelerates work, but humans remain explicitly in control of risk-impacting actions.
+The application wraps an existing Python backend (Tenable.io scan execution and Jira ticketing automation) inside a **PySide6 (Qt) desktop GUI**, allowing security analysts to configure, authorize, and monitor scans **without interacting directly with scripts or command-line arguments**.
+
+While this project is a prototype built for demonstrative and portfolio purposes, it is intentionally designed around **real Tenable and Jira APIs, real data flows, and realistic security workflows**—not mocked examples or simulated logic.
+
+The core design principle is **Human-in-the-Loop automation**:  
+automation accelerates security operations, but humans remain explicitly responsible for authorizing risk-impacting actions.
+
+---
+
+## Prototype Scope & Intent
+
+This project is **not a commercial SaaS product** or production deployment.
+
+It is a **working prototype** created to demonstrate:
+
+- How vulnerability scanning automation is structured in real environments
+- How analysts safely interact with powerful backend tooling
+- How guardrails, approvals, and visibility are enforced in security workflows
+- How SOC, Vulnerability Management, and GRC concerns intersect in tooling design
+
+All interactions follow **real execution paths** (Tenable scans, CSV exports, Jira ticket creation logic).  
+No fake data, mocked APIs, or placeholder logic are used to represent system behavior.
 
 ---
 
@@ -14,11 +35,11 @@ The core design principle is **Human-in-the-Loop automation**: automation accele
 
 This project is designed to reflect real-world security operations roles:
 
-- **SOC Analysts (Tier 1 / Tier 2)**  
-  Run ad-hoc scans against suspicious endpoints without needing Python or Tenable API expertise.
+- **SOC Analysts (Tier 2)**  
+  Initiate or support scoped vulnerability scans during investigations to validate exposure, without requiring Python or Tenable API expertise.
 
 - **Vulnerability Management Engineers**  
-  Validate fixes, re-scan assets, and automatically generate Jira tickets in a consistent, repeatable way.
+  Verify remediation, re-scan assets, and automatically generate Jira tickets in a consistent, repeatable way.
 
 - **GRC / Compliance Teams**  
   Capture execution evidence (logs, artifacts, timestamps) to support audits and compliance requirements.
@@ -35,7 +56,7 @@ Traditional vulnerability automation often looks like this:
 - High risk of misconfiguration or accidental scans
 - Manual handoffs between Tenable and Jira
 
-This project addresses those gaps by **wrapping automation in an analyst-first control layer**.
+This project addresses those gaps by **wrapping real automation in an analyst-first control layer**, without altering or oversimplifying the underlying logic.
 
 ---
 
@@ -52,7 +73,8 @@ This project addresses those gaps by **wrapping automation in an analyst-first c
 
 ### Real-Time Visibility
 - Raw backend logs are streamed live.
-- Logs are translated into a **human-readable mission timeline** (e.g., *Scan Created → Scanning → Exporting → Jira Posting*).
+- Logs are translated into a **human-readable mission timeline**  
+  (e.g., *Scan Created → Scanning → Exporting → Jira Posting*).
 - No “black box” execution.
 
 ### Secure Credential Handling
@@ -69,75 +91,3 @@ This project addresses those gaps by **wrapping automation in an analyst-first c
   - Create Jira tickets
 - Eliminates manual CSV exports and copy-paste workflows.
 
----
-
-## Architecture (At a Glance)
-
-This project follows a **decoupled, production-safe architecture**.
-
-### Frontend (Analyst Console)
-- Built with **PySide6 (Qt for Python)**.
-- Event-driven and non-blocking.
-- Responsible for:
-  - Input validation
-  - Process orchestration
-  - State visualization
-  - Secure configuration management
-
-### Backend (Unmodified Logic)
-- Existing Python scripts responsible for:
-  - Tenable.io API interaction
-  - Scan lifecycle management
-  - CSV export and normalization
-  - Jira ticket creation
-- Runs as an **isolated subprocess**, preserving CLI usability.
-
-### Why Subprocess Isolation Matters
-- Prevents UI freezes.
-- Avoids threading hazards.
-- Keeps backend reusable for automation pipelines or CI workflows.
-- Mirrors how real SOC tooling wraps legacy automation safely.
-
----
-
-## How the GUI Controls the Backend (Conceptual)
-
-1. The GUI launches the backend using a subprocess.
-2. Runtime settings (targets, flags) are injected via environment variables.
-3. Backend stdout/stderr is streamed in real time.
-4. The GUI programmatically satisfies CLI confirmation prompts **only after analyst approval**.
-5. Logs are parsed to update visual execution state.
-
-This approach keeps automation powerful **without removing human accountability**.
-
----
-
-## Security & Compliance Design
-
-- **Non-destructive `.env` updates**  
-  Configuration changes preserve comments and structure for audit clarity.
-
-- **Masked secrets**  
-  Keys are never displayed in full, logged, or exposed via process arguments.
-
-- **Execution artifacts**  
-  Each run produces timestamped logs and cached metadata for traceability.
-
-This mirrors how enterprise security tooling is evaluated in regulated environments.
-
----
-
-## Repository Structure (Simplified)
-
-```text
-├── gui/                  # Analyst Console (PySide6)
-│   ├── app.py            # Main GUI entry point
-│   ├── process_runner.py # Subprocess + threading control
-│   ├── timeline_parser.py# Log-to-state translation
-│   ├── env_manager.py    # Secure .env handling
-│   └── ui_styles.py      # Custom Qt styling
-├── tenable_scan_agent/   # Backend automation (CLI)
-│   ├── main.py
-│   ├── post_scan_to_jira.py
-│   └── ...
-└── runs/                 # Execution artifacts (logs, caches)
