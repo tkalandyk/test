@@ -1,4 +1,4 @@
-# Tenable Scan Agent – Analyst Console (GUI-Orchestrated Vulnerability Management)
+#  Vulnerability Management Scan Agent 2.0
 
 ## Overview
 
