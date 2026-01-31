@@ -32,6 +32,10 @@ All interactions follow **real execution paths** (Tenable scans, CSV exports, Ji
 No fake data, mocked APIs, or placeholder logic are used to represent system behavior.
 
 ---
+## 🎥 Click to Watch the Demo Video ⬇️
+
+[![Tenable Scan Agent Demo](https://github.com/user-attachments/assets/b9bfee9)]()
+
 
 ## Who This Is For
 
