@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a **Vulnerability Management Orchestration Tool** that transforms a traditionally CLI-driven workflow into a **safe, guided, and auditable analyst experience**.
+This project is a **Vulnerability Management Orchestration Tool** that transforms a traditionally Command Line Interface driven workflow into a **safe, guided, and auditable analyst experience**.
 
 It wraps an existing Python backend (Tenable.io scanning + Jira ticketing automation) inside a **PySide6 (Qt) desktop application**, enabling security teams to run scans, monitor progress, and generate remediation tickets **without touching scripts or command-line arguments**.
 
